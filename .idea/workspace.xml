@@ -28,12 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3920dee-60f9-4c59-a357-0b08bd9aa04e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/myfirstpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resume.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +72,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -91,7 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601442833592</updated>
       <workItem from="1601442836904" duration="2639000" />
-      <workItem from="1601862711959" duration="9540000" />
+      <workItem from="1601862711959" duration="10093000" />
+      <workItem from="1602701027843" duration="293000" />
     </task>
     <servers />
   </component>
@@ -115,31 +112,31 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="599" y="196" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.732@0.23.1280.732" timestamp="1601876997782" />
-    <state width="862" height="181" key="GridCell.Tab.0.bottom" timestamp="1601878473156">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="862" height="181" key="GridCell.Tab.0.bottom" timestamp="1601879173513">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="189" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1601875509750" />
+    <state width="862" height="181" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1601879173513" />
     <state width="862" height="189" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1601872332303" />
     <state width="1238" height="189" key="GridCell.Tab.0.bottom/0.23.1280.731@0.23.1280.731" timestamp="1601862937865" />
     <state width="862" height="181" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1601878473156" />
-    <state width="862" height="181" key="GridCell.Tab.0.center" timestamp="1601878473156">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="862" height="181" key="GridCell.Tab.0.center" timestamp="1601879173510">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="189" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1601875509745" />
+    <state width="862" height="181" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1601879173510" />
     <state width="862" height="189" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1601872332302" />
     <state width="1238" height="189" key="GridCell.Tab.0.center/0.23.1280.731@0.23.1280.731" timestamp="1601862937864" />
     <state width="862" height="181" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1601878473155" />
-    <state width="862" height="181" key="GridCell.Tab.0.left" timestamp="1601878473155">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="862" height="181" key="GridCell.Tab.0.left" timestamp="1601879173509">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="189" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1601875509743" />
+    <state width="862" height="181" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1601879173509" />
     <state width="862" height="189" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1601872332302" />
     <state width="1238" height="189" key="GridCell.Tab.0.left/0.23.1280.731@0.23.1280.731" timestamp="1601862937863" />
     <state width="862" height="181" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1601878473155" />
-    <state width="862" height="181" key="GridCell.Tab.0.right" timestamp="1601878473156">
-      <screen x="0" y="23" width="1280" height="732" />
+    <state width="862" height="181" key="GridCell.Tab.0.right" timestamp="1601879173512">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="189" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1601875509747" />
+    <state width="862" height="181" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1601879173512" />
     <state width="862" height="189" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1601872332302" />
     <state width="1238" height="189" key="GridCell.Tab.0.right/0.23.1280.731@0.23.1280.731" timestamp="1601862937865" />
     <state width="862" height="181" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1601878473156" />
