@@ -9,8 +9,18 @@
             font: normal small "Helvetica Neue";
         }
         body {
-            margin: 20px;
-            padding: 50px;
+            margin-right: 100px;
+            margin-left: 100px;
+            padding: 100px;
+        }
+
+        #content {
+            margin-top: 20px;
+            border: 10px solid green;
+            padding: 15px;
+            background: white;
+            background-clip: content-box;
+            box-shadow: 10px 10px 10px black;
         }
         table {
             border-collapse: collapse;
@@ -29,16 +39,48 @@
             background: darkgreen;
             color: black;
         }
-        .graphcontent {
-            padding: 50px;
-            margin-right: 75px;
-            margin-left: 75px;
+       .labelContainer {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+        .labelContainer div{
+
+            padding: 10px;
         }
+
+        .labelBox{
+            width: 45%;
+        }
+        .textContainer {
+            display: flex;
+        }
+
+        .textContainer div {
+            padding: 10px;
+            border: 2px black solid;
+        }
+        .textBoxOne{
+            flex: 1;
+            order: 1;
+            background-color: green;
+        }
+        .textBoxTwo{
+            flex: 2;
+            order: 2;
+            background-color: lightgoldenrodyellow;
+        }
+        .textBoxThree{
+            flex: 1;
+            order: 3;
+            background-color: green;
+        }
+
     </style>
 </head>
 <body>
 <div class="pagetitle">
-<h5>Welcome to my page of numbers!</h5>
+<h1>Welcome to Janine's page of numbers!</h1>
 </div>
 <table>
     <tr>
@@ -130,26 +172,173 @@
 
 </table>
 
-
-
-<div class="graphcontent">
-    <a href="images/Lineargraph.png"><img src="images/Lineargraph.png" width = 75% style="float:right"></a>
-    <h3 style="float: left">Linear</h3>
-
-    <h3 style="float: left">Quadratic</h3>
-    <a href="images/quadraticgraph.png"><img src="images/quadraticgraph.png" width = 75% style="float:right"></a>
-
-    <h3 style="float: left">Cubic</h3>
-    <a href="images/cubicgraph.png"><img src="images/cubicgraph.png" width = 75% style="float:right"></a>
-
-    <h3 style="float: left">Factorial</h3>
-    <a href="images/factorialgraph.png"><img src="images/factorialgraph.png" width = 75% style="float:right"></a>
-
-    <h3 style="float: left">Exponential</h3>
-    <a href="images/exponentialgraph.png"><img src="images/exponentialgraph.png" width = 75% style="float:right"></a>
+<div id="content">
+    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. At augue eget arcu dictum varius duis at. Quam id
+        leo in vitae turpis massa sed elementum. Ridiculus mus mauris
+        vitae ultricies leo. Varius sit amet mattis vulputate. Tincidunt
+        lobortis feugiat vivamus at augue eget arcu dictum.
+        Elit pellentesque habitant morbi tristique senectus.
+        Augue lacus viverra vitae congue eu consequat ac. Diam
+        maecenas sed enim ut sem viverra aliquet eget. Risus
+        feugiat in ante metus dictum at tempor commodo ullamcorper.
+        Et molestie ac feugiat sed. Risus feugiat in ante metus. Purus sit amet
+        luctus venenatis lectus magna. Eget nunc lobortis mattis aliquam faucibus.
+        Nec ullamcorper sit amet risus nullam eget felis eget nunc. Convallis a
+        cras semper auctor. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc.
+        Fermentum iaculis eu non diam phasellus vestibulum lorem. Sollicitudin tempor
+        id eu nisl nunc mi ipsum. Convallis convallis tellus id interdum velit laoreet
+        id donec ultrices. Morbi tempus iaculis urna id volutpat.
+    </h3>
 </div>
-<p><a href="main.html">Go back to the Main Page</a></p>
+<div class="labelContainer">
+    <div class="labelBox">
+        <h3>
+            Linear Graph
+        </h3>
+    </div>
+    <div class="labelBox">
+        <p>
+            <a href="images/Lineargraph.png"><img src="images/Lineargraph.png" width="100%">
+            </a>
+        </p>
+    </div>
+</div>
+<div class="labelContainer">
+    <div class="labelBox">
+        <h3>
+            Quadratic
+        </h3>
+    </div>
+    <div class="labelBox">
+        <p>
+            <a href="images/quadraticgraph.png"><img src="images/quadraticgraph.png" width="100%">
+            </a>
+        </p>
+    </div>
+</div>
+<div class="labelContainer">
+    <div class="labelBox">
+        <h3>
+            Cubic
+        </h3>
+    </div>
+    <div class="labelBox">
+        <p>
+            <a href="images/cubicgraph.png"><img src="images/cubicgraph.png" width="100%">
+            </a>
+        </p>
+    </div>
+</div>
+<div class="labelContainer">
+    <div class="labelBox">
+        <h3>
+            Factorial
+        </h3>
+    </div>
+    <div class="labelBox">
+        <p>
+            <a href="images/factorialgraph.png"><img src="images/factorialgraph.png" width="100%">
+            </a>
+        </p>
+    </div>
+</div>
+<div class="labelContainer">
+    <div class="labelBox">
+        <h3>
+            Linear Graph
+        </h3>
+    </div>
+    <div class="labelBox">
+        <p>
+            <a href="images/Lineargraph.png"><img src="images/Lineargraph.png" width="100%">
+            </a>
+        </p>
+    </div>
+</div>
+<div class="labelContainer">
+    <div class="labelBox">
+        <h3>
+            Exponential
+        </h3>
+    </div>
+    <div class="labelBox">
+        <p>
+            <a href="images/exponentialgraph.png"><img src="images/exponentialgraph.png" width="100%">
+            </a>
+        </p>
+    </div>
+</div>
+<div class="textContainer">
+    <div class="textBoxOne">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Volutpat est velit egestas dui. Sit amet est placerat
+            in egestas erat. Sit amet mattis vulputate enim. Cum sociis
+            natoque penatibus et. Imperdiet massa tincidunt nunc pulvinar.
+            Eget nullam non nisi est sit. Aliquam faucibus purus in massa
+            tempor nec feugiat nisl pretium. Nec ullamcorper sit amet
+            risus nullam. Odio facilisis mauris sit amet massa vitae tortor
+            condimentum. Egestas diam in arcu cursus euismod quis viverra
+            nibh. Porttitor eget dolor morbi non arcu risus quis varius quam.
+            Purus in mollis nunc sed id. Quam quisque id diam vel quam elementum
+            pulvinar etiam. Lectus arcu bibendum at varius vel pharetra vel.
+            Tortor aliquam nulla facilisi cras fermentum odio. Lorem ipsum
+            dolor sit amet consectetur adipiscing elit ut aliquam.
+            </p>
+    </div>
+    <div class="textBoxTwo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Volutpat est velit egestas dui. Sit amet est placerat
+            in egestas erat. Sit amet mattis vulputate enim. Cum sociis
+            natoque penatibus et. Imperdiet massa tincidunt nunc pulvinar.
+            Eget nullam non nisi est sit. Aliquam faucibus purus in massa
+            tempor nec feugiat nisl pretium. Nec ullamcorper sit amet
+            risus nullam. Odio facilisis mauris sit amet massa vitae tortor
+            condimentum. Egestas diam in arcu cursus euismod quis viverra
+            nibh. Porttitor eget dolor morbi non arcu risus quis varius quam.
+            Purus in mollis nunc sed id. Quam quisque id diam vel quam elementum
+            pulvinar etiam. Lectus arcu bibendum at varius vel pharetra vel.
+            Tortor aliquam nulla facilisi cras fermentum odio. Lorem ipsum
+            dolor sit amet consectetur adipiscing elit ut aliquam. risus nullam.
+            Odio facilisis mauris sit amet massa vitae tortordolor sit amet consectetur
+            adipiscing elit ut aliquam. risus nullam.
+            Odio facilisis mauris sit amet massa vitae tortor
+            condimentum. Egestas diam in arcu cursus euismod quis viverra
+            nibh. Porttitor eget dolor morbi non arcu risus quis varius quam.
+            Purus in mollis nunc sed id. Quam quisque id diam vel quam elementum
+            pulvinar etiam. Lectus arcu bibendum at varius vel pharetra vel.
+            Tortor aliquam nulla facilisi cras fermentum odio. Lorem ipsum
+            dolor sit amet consectetur adipiscing elit ut aliquam.
+            condimentum. Egestas diam in arcu cursus euismod quis viverra
+            nibh. Porttitor eget dolor morbi non arcu risus quis varius quam.
+            Purus in mollis nunc sed id. Quam quisque id diam vel quam elementum
+            pulvinar etiam. Lectus arcu bibendum at varius vel pharetra vel.
+            Tortor aliquam nulla facilisi cras fermentum odio. Lorem ipsum
+            dolor sit amet consectetur adipiscing elit ut aliquam.</p>
+    </div>
+    <div class="textBoxThree">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Volutpat est velit egestas dui. Sit amet est placerat
+            in egestas erat. Sit amet mattis vulputate enim. Cum sociis
+            natoque penatibus et. Imperdiet massa tincidunt nunc pulvinar.
+            Eget nullam non nisi est sit. Aliquam faucibus purus in massa
+            tempor nec feugiat nisl pretium. Nec ullamcorper sit amet
+            risus nullam. Odio facilisis mauris sit amet massa vitae tortor
+            condimentum. Egestas diam in arcu cursus euismod quis viverra
+            nibh. Porttitor eget dolor morbi non arcu risus quis varius quam.
+            Purus in mollis nunc sed id. Quam quisque id diam vel quam elementum
+            pulvinar etiam. Lectus arcu bibendum at varius vel pharetra vel.
+            Tortor aliquam nulla facilisi cras fermentum odio. Lorem ipsum
+            dolor sit amet consectetur adipiscing elit ut aliquam.
+        </p>
+    </div>
+</div>
 
+<p><a href="main.html">Go back to the Main Page</a></p>
 
 </body>
 </html>
