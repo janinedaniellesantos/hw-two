@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculations</title>
+    <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+    <script>
+        function DrawTable(){
+            let start = parseInt(document.getElementById("txtStart").value);
+            let end = parseInt(document.getElementById("txtEnd").value);
+            let output = document.getElementById("outputTable");
+            let table = "";
+            table =
+                "<table class=\"table table-dark\">" +
+                "   <thead>" +
+                "       <tr>" +
+                "           <th scope=\"col\">n</th>" +
+                "           <th scope=\"col\">n<sup>2</sup></th>" +
+                "           <th scope=\"col\">n<sup>3</sup></th>" +
+                //add column//
+                "           <th scope=\"col\">n<sup>2</sup>+n</th>" +
+                "       </tr>" +
+                "   </thead>" +
+                "   <tbody>";
+            for (let i=start; i<=end; i++){
+                table += (
+                    "   <tr>" +
+                    "       <th scope=\"row\">" + i + "</th>" +
+                    "       <td>" + (i*i) + "</td>" +
+                    "       <td>" + (i*i*i) + "</td>" +
+                    //n2+n calculation//
+                    "       <td>" + (i*i+(i)) + "</td>" +
+                    "   </tr>");
+            }
+            table += (
+                "   </tbody>" +
+                "</table>");
+            output.innerHTML = table;
+        }
+        //function for Prime Number
+        function primeCheck(){
+            let number = parseInt(document.getElementById("prime").value);
+            let primeCheck = false;
+            let output = document.getElementById("outputCheck");
+            let n = number;
+
+            if (n <= 1) {
+                window.alert("NO, "+ n+ " is not a prime number...try again");
+                return false;
+            }
+            else if (n === 2) {
+                window.alert("Yes, "+ n+ " is a prime number...yay");
+                return true;
+            }
+            else
+                {
+                    for (let x=2; x<n; x++)
+                    {
+                        if(n % x === 0)
+                        {
+                            window.alert("NO, "+ n+ " is not a prime number...try again");
+                            return false;
+                        }
+                    }
+                    window.alert("Yes, "+ n+ " is a prime number...yay");
+                    return true;
+                }
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h2>Creating a Table</h2>
+    <p>We are going to fill up a table with data using the information provided in the
+        controls below.</p>
+    <div class="form-group">
+        <label for="txtStart">Start</label>
+        <input type="number" name="txtStart" id="txtStart" class="form-control"
+               placeholder="Start Number">
+    </div>
+    <div class="form-group">
+        <label for="txtEnd">End</label>
+        <input type="number" name="txtEnd" id="txtEnd" class="form-control"
+               placeholder="End Number">
+    </div>
+    <button type="submit" id="createTable" class="btn btn-primary">Create Table</button>
+</div>
+<br>
+<hr>
+<div class="container" id="outputTable">
+</div>
+<script>
+    document.getElementById("createTable").addEventListener("click", DrawTable);
+</script>
+<div class="container">
+    <h2>Check if Prime</h2>
+    <p>Check if your number is Prime!</p>
+    <div class="form-group">
+        <label for="prime">Input a number</label>
+        <input type="number" name="prime" id="prime" class="form-control"
+               placeholder="Input Number">
+    </div>
+    <button type="submit" id="primeResult" class="btn btn-primary">Check if Prime!</button>
+</div>
+
+<div class="container" id="outputCheck">
+</div>
+<script>
+    document.getElementById("primeResult").addEventListener("click", primeCheck);
+</script>
+</body>
+</html>
